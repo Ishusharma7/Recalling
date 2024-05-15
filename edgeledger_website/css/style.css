@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+                        /* header */
+
+header{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/home/showcase.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+}
+
+nav span{
+    color: green;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 20px 50px;
+    font-size: 1.5em;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6));
+    position: fixed;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    font-size: 1.2em;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+nav ul a:hover{
+    border-bottom: #28a745 5px solid;
+}
+.limit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.limit h1{
+    font-size: 6em;
+    font-weight: 100;
+}
+.limit h3{
+    font-size: 2.6em;
+    line-height: 1.6em;
+    margin: 20px;
+}
+.btn{
+    color: white;
+    background-color: #28a745;
+    padding: 20px 60px;
+    border-radius: 10px;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+                        /* services */
+
+                        
+.services{
+    padding: 50px;
+}
+.flex-container-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flex-part{
+    flex-grow: 1;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.specs{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1.1em;
+}
+.specs p{
+    margin: 20px;
+}
+.fa-university:before,.fa-book-reader:before,.fa-pencil-alt:before {
+    font-size: 2em;
+    color: white;
+    background-color: green;
+    padding: 20px;
+    border-radius: 50%;
+}
+                    /* looking for layer */
+
+
+.flex-part-2,.flex-part-6{
+    width: 50%;
+    color: white;
+}
+.flex-part-2:nth-child(2){
+    background-color: #28a745;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+}
+.flex-part-2 h3,.flex-part-4 h3{
+    font-size: 1.6em;
+}
+.flex-part-2 h1,.flex-part-4 h1{
+    font-size: 4em;
+    font-weight: 100;
+}
+.flex-part-2 p,.flex-part-4 p{
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+.btn-2{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 45px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+                            /* business cases */
+
+.business{
+    padding: 50px;
+}
+.flex-container-col{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+.flex-part-3 img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.flex-part-3,.flex-part-5{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+}
+.flex-part-3 h4,.flex-part-5 h4{
+    font-size: 1.5em;
+}
+.flex-part-3 h2,.flex-part-5 h2{
+    font-size: 4em;
+    font-weight: 100;
+}
+.flex-part-3 p,.flex-part-5 p{
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+.flex-part-3:nth-child(2),.flex-part-5:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+.flex-part-3 img{
+    width: 380px ;
+    height: 300px;
+}
+
+                        /* blog */
+
+.flex-part-4{
+    width: 50%;
+    color: white;
+}
+.flex-part-4:nth-child(1){
+    background-color: #0284d0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+                                /* team */
+
+.flex-part-5 img{
+    width: 500px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.members{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3em;
+    font-size: 1.2em;
+}
+
+                                        /* callback */
+.flex-part-6:nth-child(2){
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+}
+.flex-part-6 h3{
+    font-size: 3em;
+    font-weight: 100;
+}
+.flex-part-6 input{
+    padding: 20px;
+    border: none;
+    width: 100%;
+    font-size: 1.2em;
+}
+.btn-3{
+    color: white;
+    background-color: #28a745;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.4em;
+    border-radius: 10px;
+}
+input{
+    margin: 10px 0;
+}
+input:focus{
+    outline: 5px solid #28a745;
+}
+                                    /* footer */
+
+footer{
+    padding: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+.footer-img i{
+    padding: 25px;
+}
+.fa-facebook:before,.fa-twitter:before,.fa-youtube:before,.fa-linkedin:before,footer h1{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.fa-facebook:hover,.fa-twitter:hover,.fa-youtube:hover,.fa-linkedin:hover{
+    color: #28a745;
+}
+
+
+
+                        /* blog page css */
+
+
+                        /* blog */
+
+.blog{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/home/blog.jpg) ;
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.logo{
+    color: white;
+}
+.blog h1{
+    font-size: 5em;
+    font-weight: 100;
+}
+
+            /*posts */
+
+.flex-part-7{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
+}
+.flex-part-7:nth-child(1){
+    background-color: #333;
+    color: white;
+    padding: 30px;
+}
+.flex-part-7:nth-child(2){
+    padding: 30px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.pad{
+    padding: 0 !important;
+}
+.flex-part-7 h1{
+    font-size: 4em;
+    font-weight: 100;
+}
+.flex-part-7 h3{
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.flex-part-7 p{
+ font-size: 1.4em;
+ line-height: 1.4em;
+}
+.btn-4{
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+.fa-user:before{
+    padding-right: 6px;
+}
+.bt{
+    background-color: white;
+    color: #333;
+}
