@@ -347,3 +347,182 @@ footer{
     background-color: white;
     color: #333;
 }
+
+                            /* post page */
+
+.post{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 30px;
+}
+.post h1{
+    color: #333;
+    font-size: 5em;
+    border-bottom:2px solid #333 ;
+    padding-bottom: 5px;
+    width: 90vw;
+    
+}
+.post h3{
+    font-size: 1.5em;
+}
+.post img{
+    border-radius: 50%;
+    align-self: center;
+}
+.post p{
+    font-size: 1.7em;
+    line-height: 1.7em;
+}
+@media screen and (max-width: 1300px){ 
+                /* header */
+    nav{
+        flex-direction: column;
+        gap: 1.2em;
+        align-items: center;
+    }
+    nav ul a {
+        padding: 10px;
+    }
+    h1.logo{
+        font-size: 1em;
+    }
+    nav ul{
+        font-size: 20px;
+        gap: 0;
+    }
+    .limit h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    .limit h3{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .btn{
+        padding: 15px 25px;
+        font-size: 1.2em;
+    }
+    .limit{
+        gap: 1.5em;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1080px){ 
+                                /* .services */
+    .services{
+        padding: 0;
+    }
+    .fa-university:before, .fa-book-reader:before, .fa-pencil-alt:before{
+        font-size: 1em;
+    }
+    .specs h4{
+        font-size: 25px;
+    }
+    .specs p{
+        font-size: 20px;
+    }
+    .flex-part-2:nth-child(2) {
+        padding: 20px;
+    }
+    .flex-part-2{
+        width: 100%;
+    }
+    .flex-container-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-part-2 h1{
+        font-size: 3em;
+    }
+    .flex-part-2 p{
+        font-size: 1em;
+    }
+    .btn-2{
+        font-size: 1.2em;
+        padding: 11px 21px;
+    }
+                       /* blog page */
+
+.flex-part-7{
+    width: 100% ;
+}
+.post-2{
+    flex-direction: column-reverse;
+}
+}
+    @media screen and (max-width: 800px){ 
+
+                        /* cases */
+
+
+    .flex-part-3 h2{
+        font-size: 2.5em;
+    }
+    .flex-part-3 p{
+        text-align: center;
+    }
+    .flex-part-3 img{
+        width: 100%;
+        height: 100%;
+    }
+
+                /* .blog */
+
+.flex-part-4{
+    width:100%
+}
+.flex-part-2 p, .flex-part-4 p{
+    font-size: 1em;
+}
+.flex-part-2 h1, .flex-part-4 h1{
+    font-size: 3em;
+}
+ .flex-part-5 h2{
+    font-size: 3em;
+    text-align: center;
+}
+.flex-part-5 p{
+    text-align: center;
+    font-size: 1.2em;
+}
+.flex-part-5 img{
+    width: 100%;
+}
+
+
+                    /* callback */
+
+.flex-part-6{
+    width: 100%;
+}
+.flex-part-6 input {
+    padding: 15px;
+    font-size: 1em;
+}
+.flex-part-6 h3{
+    font-size: 2.5em;
+}
+.btn-3{
+    padding: 10px;
+}
+
+                    /* footer */
+
+.footer-img i {
+    padding: 12px;
+}
+.fa-facebook:before, .fa-twitter:before, .fa-youtube:before, .fa-linkedin:before, footer h1 {
+    font-size: 1.2em;
+}
+
+                   /* blog page */
+
+.flex-part-7 h1{
+    font-size: 3.5em;
+}
+.flex-part-7 h3{
+    font-size: 1.3em;
+}
+}
