@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                                /* nav bar  */
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+.contain{
+    display: grid;
+    grid-template-columns: 6fr 3fr 1fr;
+    background-color: white;
+    align-items: center;
+    margin: 0 10em;
+    padding: 20px;
+}
+.fa-facebook:before,.fa-twitter:before, .fa-instagram:before, .fa-youtube:before{
+    color: #777;
+    padding: 0 5px;
+}
+nav ul{
+    display: flex;
+    gap: 5px;
+}
+nav ul li{
+    list-style: none;
+    font-size: 1.4em;
+}
+nav ul li:first-child a{
+    background-color: #c72727;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+nav ul li:last-child a{
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    padding: 10px;
+    text-decoration: none;
+}
+                    /* header */
+
+.hero{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),url(../img/featured.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.sport-article{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+width: 80vw;
+gap: 1.5em;
+padding: 50px;
+}
+.sport-article p{
+    width: 40vw;
+    font-size: 1.5em;
+}
+.sport-article h2{
+    font-size: 2em;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #c72727;
+    width: max-content;
+    padding: 15px 40px;
+    font-size: 1.5em;
+}
+.sport-tag{
+    background-color: #f99500;
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-align: center;
+}
+                        /* articles */
+
+.articles{
+    padding: 100px;
+    background-color: #cdcdcd;
+}
+.articles h1{
+    margin: 15px 0;
+}
+article{
+    background-color: white;
+    padding: 20px;
+}
+.article-contain{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5em;
+}
+.flex-row{
+    display: flex;
+    gap: 2em;
+    grid-column: 1/3;
+}
+.flex-row:last-child{
+    grid-column: 2/4;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.flex-column-2{
+    display: flex ;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+}
+article:nth-child(2){
+    background-color: #333;
+    color: white;
+    justify-content: flex-start;
+}
+article:nth-child(6){
+    background-color: #c72727;
+    color: white;
+    justify-content: flex-start;
+}
+.tech-tag{
+    background-color: #009cff;
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+}
+
+.ent-tag{
+    background-color: #a66bbe;
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;   
+}
+article h3{
+    font-size: 2em;
+}
+article p{
+    font-size: 1.5em;
+}
+                    /* footer */
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 50px;
+}
+.grid-col{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2em;
+    margin: auto;
+    width: 70vw;
+}
+.grid-row{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.5em; */
+}
+.grid-row:nth-child(3){
+    gap: 2em;
+}
+.grid-row p{
+    font-size: 1.5em;
+    margin: 1.5em 0;
+}
+.grid-row input{
+    padding: 15px;
+    font-size: 1.2em;
+}
+.grid-row ul li {
+    list-style: none;
+    margin-top: 15px;
+    border-bottom: 2px solid white;
+}
+.grid-row a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 10px;
+}
+.btn-1{
+    background-color: #c72727;
+    text-align: center;
+}
+.btn-2{
+    background-color: #f99500;
+    width: max-content;
+}
+footer h4{
+    background-color: #444;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px;
+    width: 70vw;
+    margin: 20px auto;
+    
+}
+                    /* about page */
+
+.container{
+    background-color: #f3f3f3;
+    display: grid;
+    grid-template-columns:1fr  5fr 2fr;
+    grid-gap: 2em;
+    margin-top: 100px;
+}
+aside{
+    background-color: #c72727;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    color: white;
+    gap: 2em;
+    margin-top: 50px;
+    padding: 20px 30px;
+}
+#org{
+    width: 90%;
+    background-color: white;
+    color: black;
+    margin-top: 50px;
+}
+#org h1{
+    font-size: 3em;
+}
+#org p{
+    font-size: 1.6em;
+    margin: 30px 0;
+}
+.btn-3 {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(69, 68, 68);
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 1.4em;
+}
+aside h2{
+    font-size: 1.6em;
+}
+aside p{
+    font-size: 1.4em;
+}
+
+
+@media screen and (max-width: 1280px){
+                /* nav */
+.fa-facebook:before,.fa-twitter:before, .fa-instagram:before, .fa-youtube:before{
+    display: none;
+}
+.contain{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+}
+
+                    /* article */
+
+.articles{
+    padding: 50px 0;
+}
+
+            /* footer */
+
+.grid-row p{
+font-size: 1.2em;
+}
+
+} 
+@media screen and (max-width: 1080px){
+
+
+                    /* .hero */
+
+.hero{
+    padding: 100px 0;
+}
+.sport-article{
+    padding: 50px 0;
+}
+.sport-article p {
+    width: 100%;
+}
+                    /* article */
+    .grid-col{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid-col {
+        margin: auto;
+        width: 90vw;
+    }
+    footer h4{
+        width: 90vw;
+        font-size: 1.2em;
+    }
+    .article-contain{
+        display: block;
+    }
+    .flex-row{
+        flex-direction: column;
+    }
+    .flex-row img{
+        width: 100%;
+        padding: 40px;
+    }
+    .flex-column-2{
+        padding: 20px 40px;
+    }
+    .articles img{
+        padding: 0 40px;
+    }
+
+                /* footer */
+    footer{
+        padding: 20px 0;
+    }
+
+        /* about page */
+
+aside{
+    display: none;
+}
+.container{
+    grid-template-columns: 1fr !important;
+}
+}
+@media screen and (max-width: 1490px){
+    .q{
+        display: none;
+    }
+    .container{
+        grid-template-columns: 5fr 3fr;
+    }
+} 
