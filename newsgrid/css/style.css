@@ -184,9 +184,11 @@ footer{
     font-size: 1.5em;
     margin: 1.5em 0;
 }
-.grid-row input{
+.grid-row input[type="text"]{
     padding: 15px;
     font-size: 1.2em;
+    width: -webkit-fill-available;
+
 }
 .grid-row ul li {
     list-style: none;
@@ -202,6 +204,10 @@ footer{
 .btn-1{
     background-color: #c72727;
     text-align: center;
+    width: -webkit-fill-available;
+    padding: 12px;
+    color: white;
+    font-size: 1.4em;
 }
 .btn-2{
     background-color: #f99500;
