@@ -11,7 +11,7 @@ header {
   color: white;
   position: absolute;
   width: 100%;
-  padding: 1rem 4rem;
+  padding: 0rem 4rem;
 }
 header nav {
   display: flex;
@@ -20,9 +20,10 @@ header nav {
 }
 header nav ul {
   display: flex;
-  gap: 2em;
+  align-items: center;
+  gap: 3em;
   height: 100%;
-  font-size: 1.3em;
+  font-size: 0.8em;
   font-weight: 100;
 }
 header nav ul li {
@@ -38,6 +39,7 @@ header nav ul li a {
 header nav ul li:hover {
   border-bottom: 3px solid white;
   cursor: pointer;
+  color: white;
 }
 header nav ul .active {
   border-bottom: 3px solid #ffbc00 !important;
@@ -57,7 +59,7 @@ header nav ul .active {
   height: 100vh;
 }
 .hero h1 {
-  font-size: 5em;
+  font-size: 4em;
   line-height: 1.2;
   font-weight: 500;
 }
@@ -68,9 +70,9 @@ header nav ul .active {
 .hero a {
   color: black;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1em;
   background-color: white;
-  padding: 15px 30px;
+  padding: 15px 25px;
   font-weight: 100;
   text-align: center;
   transition: background-color 1s;
@@ -87,7 +89,7 @@ header nav ul .active {
   align-items: center;
 }
 .special h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 100;
 }
 .special h2::after {
@@ -100,7 +102,7 @@ header nav ul .active {
   margin: auto;
 }
 .special span {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #333;
   padding: 20px;
   text-align: center;
@@ -122,19 +124,18 @@ header nav ul .active {
 }
 .special .flex-row .flex-item i {
   color: #ffbc00;
-  font-size: 3em;
+  font-size: 2em;
 }
 .special .flex-row .flex-item p {
   text-align: center;
   color: #333;
-  font-size: 1.5em;
+  font-size: 0.9em;
   align-self: flex-start;
 }
 .special .flex-row-2 {
   margin-top: 80px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -149,15 +150,15 @@ header nav ul .active {
   padding: 50px;
 }
 .special .flex-row-2 .flex-item .flex-item i {
-  font-size: 4em;
+  font-size: 2em;
 }
 .special .flex-row-2 .flex-item h4 {
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 100;
   text-align: center;
 }
 .special .flex-row-2 .flex-item h5 {
-  font-size: 3em;
+  font-size: 2em;
   color: black;
   font-weight: 100;
 }
@@ -188,7 +189,7 @@ header nav ul .active {
   transition: all 1s;
 }
 .creation h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 100;
 }
 .creation h2::after {
@@ -201,7 +202,7 @@ header nav ul .active {
   margin: auto;
 }
 .creation span {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #333;
   padding: 20px;
   text-align: center;
@@ -224,15 +225,15 @@ header nav ul .active {
 .creation .flex-row .flex-item i {
   color: white;
   background-color: #333;
-  padding: 50px;
+  padding: 30px;
   border-radius: 50%;
-  font-size: 4em;
+  font-size: 3em;
   position: relative;
   transition: all 1s;
 }
 .creation .flex-row .flex-item i:hover {
   background-color: #ffbc00;
-  padding: 70px;
+  padding: 50px;
 }
 .creation .flex-row .flex-item i:hover .numbers {
   background-color: #333;
@@ -240,11 +241,11 @@ header nav ul .active {
 .creation .flex-row .flex-item p {
   text-align: center;
   color: #333;
-  font-size: 1.5em;
+  font-size: 0.9em;
   align-self: flex-start;
 }
 .creation .flex-row .flex-item h3 {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 footer {
@@ -256,7 +257,7 @@ footer {
   padding: 40px;
 }
 footer span {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 footer ul {
   text-decoration: none;
@@ -266,8 +267,8 @@ footer ul {
 }
 footer ul li a {
   color: white;
-  font-size: 1.5em;
-  padding: 20px;
+  font-size: 1em;
+  padding: 10px;
   border: 3px solid white;
   border-radius: 50%;
 }
@@ -280,13 +281,16 @@ footer ul li a {
   border-bottom: 5px solid #ffbc00;
   position: static;
 }
+.head nav ul li a:hover {
+  color: white;
+}
 
 .about {
   padding: 50px;
 }
 .about h1 {
   text-align: center;
-  font-size: 3em;
+  font-size: 1.7em;
   font-weight: 100;
 }
 .about h1::after {
@@ -301,7 +305,7 @@ footer ul li a {
 .about span {
   display: block;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #333;
   margin: 30px;
 }
@@ -319,9 +323,10 @@ footer ul li a {
 }
 .about .grid .grid-item h2 {
   font-weight: 600;
+  font-size: 1em;
 }
 .about .grid .grid-item p {
-  font-size: 1.3em;
+  font-size: 0.9em;
   color: #333;
 }
 .about .grid .grid-items {
@@ -329,15 +334,16 @@ footer ul li a {
   text-align: center;
 }
 .about .grid .grid-items i {
-  font-size: 5em;
+  font-size: 3em;
   color: #ffbc00;
 }
 .about .grid .grid-items h3 {
-  font-size: 1.5em;
+  font-size: 1em;
+  font-weight: 700;
   margin: 20px 0 10px 0;
 }
 .about .grid .grid-items p {
-  font-size: 1.3em;
+  font-size: 0.9em;
 }
 
 .tech {
@@ -348,7 +354,7 @@ footer ul li a {
   text-align: center;
   color: white;
   font-weight: 100;
-  font-size: 3em;
+  font-size: 2em;
 }
 .tech h2::after {
   content: "";
@@ -361,11 +367,11 @@ footer ul li a {
 }
 .tech .prog {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .tech .prog .progress {
   margin: 0 0 25px 0;
-  height: 30px;
+  height: 15px;
 }
 .tech .prog .progress .progress-bar {
   background-color: #ffbc00;
@@ -387,7 +393,7 @@ footer ul li a {
   padding: 50px;
 }
 .test h2 {
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
 }
 .test h2::after {
@@ -401,7 +407,7 @@ footer ul li a {
 }
 .test span {
   display: block;
-  font-size: 1.4em;
+  font-size: 1.3em;
   text-align: center;
   margin: 30px;
 }
@@ -413,7 +419,7 @@ footer ul li a {
   width: 25%;
 }
 .test .flex-row-3 .flex-it p {
-  font-size: 1.3em;
+  font-size: 0.9em;
   border: 2px solid #ccc;
   padding: 10px;
   border-radius: 10px;
@@ -421,13 +427,14 @@ footer ul li a {
 }
 .test .flex-row-3 .flex-it img {
   border-radius: 50%;
-  width: 100px;
+  width: 80px;
 }
 .test .flex-row-3 .flex-it ul {
   list-style: none;
   display: flex;
   align-items: center;
-  font-size: 1.3em;
+  font-size: 0.9em;
+  padding: 0;
   gap: 0.5em;
 }
 
@@ -435,8 +442,9 @@ footer ul li a {
   padding: 50px;
 }
 .work h1 {
-  font-size: 3em;
+  font-size: 1.8em;
   text-align: center;
+  font-weight: 100;
 }
 .work h1::after {
   content: "";
@@ -449,7 +457,7 @@ footer ul li a {
 }
 .work span {
   display: block;
-  font-size: 1.4em;
+  font-size: 1.3em;
   text-align: center;
   margin: 30px;
 }
@@ -459,9 +467,12 @@ footer ul li a {
 }
 .work .row-grid li {
   position: relative;
+  list-style: none;
 }
-.work .row-grid img {
-  width: calc(100% - 10px);
+.work .row-grid li:hover > .magic {
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
 }
 .work .row-grid .magic {
   display: flex;
@@ -470,8 +481,87 @@ footer ul li a {
   align-items: center;
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 0%;
+  width: 0%;
+  opacity: 0;
+  background-color: orange;
+  color: white;
+  transition: all 1s ease-in-out;
+}
+.work .row-grid img {
   width: 100%;
+  height: 100%;
+}
+
+.contact {
+  padding: 50px;
+}
+.contact h1 {
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: 100;
+}
+.contact h1::after {
+  content: "";
+  display: block;
+  background-color: #ffbc00;
+  width: 1.5em;
+  height: 3px;
+  position: relative;
+  margin: auto;
+}
+.contact span {
+  display: block;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 30px;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+.contact form input {
+  padding: 0.5em 1em;
+}
+.contact form textarea {
+  grid-column: 1/3;
+}
+.contact form button {
+  color: white;
+  background-color: #333;
+  text-align: center;
+  text-decoration: none;
+  margin: 50px auto 0;
+  width: 50%;
+  grid-column: 1/3;
+  padding: 10px;
+  transition: background-color 1s;
+  border: none;
+}
+.contact form button:hover {
+  background-color: #ffbc00;
+}
+
+.ways {
+  padding: 50px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.ways .way {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.next {
+  background-color: #ffbc00;
+  color: white;
+  font-size: 2.5em;
+  padding: 50px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,6 +2,7 @@ $font-light: white;
 $font-mid:#333;
 $font-dark: black;
 $orange : #ffbc00;
+$overlay: orange;
 
 *{
     padding: 0;
@@ -16,7 +17,7 @@ header{
     color: $font-light;
     position: absolute;
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 0rem 4rem;
     nav{
         display: flex;
         justify-content: space-between;
@@ -24,9 +25,10 @@ header{
     
      ul{
         display: flex;
-        gap: 2em;
+        align-items: center;
+        gap: 3em;
         height: 100%;
-        font-size: 1.3em;
+        font-size: .8em;
         font-weight: 100;
 
 
@@ -42,7 +44,9 @@ header{
            &:hover{
             border-bottom: 3px solid white ;
             cursor: pointer;
+            color: $font-light;
      }
+    
        
         }
         .active{
@@ -69,7 +73,7 @@ header{
     height: 100vh;
 
     h1{
-        font-size: 5em;
+        font-size: 4em;
         line-height: 1.2;
         font-weight: 500;
     }
@@ -80,9 +84,9 @@ header{
     a{
         color: $font-dark;
         text-decoration: none;
-        font-size: 1.3em;
+        font-size: 1em;
         background-color: white;
-        padding: 15px 30px;
+        padding: 15px 25px;
         font-weight: 100;
         text-align: center;
         transition: background-color 1s;
@@ -104,7 +108,7 @@ header{
     align-items: center;
 
     h2{
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 100;
 
         &::after{
@@ -118,7 +122,7 @@ header{
         }
     }
     span{
-        font-size: 1.5em;
+        font-size: 1.3em;
         color: $font-mid;
         padding: 20px;
         text-align: center;
@@ -141,12 +145,12 @@ header{
 
             i{
                 color: $orange;
-                font-size: 3em;
+                font-size: 2em;
             }
             p{
                 text-align: center;
                 color: $font-mid;
-                font-size: 1.5em;
+                font-size: 0.9em;
                 align-self: flex-start;
             }
         }
@@ -155,7 +159,6 @@ header{
         margin-top: 80px;
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
         width: 100%;
 
@@ -170,15 +173,15 @@ header{
             padding: 50px;
 
         .flex-item i{
-            font-size: 4em;
+            font-size: 2em;
         }
          h4{
-            font-size: 2em;
+            font-size: 1em;
             font-weight: 100;
             text-align: center;
         }
          h5{
-            font-size: 3em;
+            font-size: 2em;
             color: black;
             font-weight: 100;
         }
@@ -218,7 +221,7 @@ header{
     }
 
     h2{
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 100;
 
         &::after{
@@ -232,7 +235,7 @@ header{
         }
     }
     span{
-        font-size: 1.5em;
+        font-size: 1.3em;
         color: $font-mid;
         padding: 20px;
         text-align: center;
@@ -255,15 +258,15 @@ header{
             i{
                 color: $font-light;
                 background-color: $font-mid;
-                padding: 50px;
+                padding: 30px;
                 border-radius: 50%;
-                font-size: 4em;
+                font-size: 3em;
                 position: relative;
                 transition: all 1s;
             }
             i:hover{
                 background-color: $orange;
-                padding: 70px;
+                padding: 50px;
                 .numbers{
                     background-color: #333;
                 }
@@ -271,11 +274,11 @@ header{
             p{
                 text-align: center;
                 color: $font-mid;
-                font-size: 1.5em;
+                font-size: 0.9em;
                 align-self: flex-start;
             }
             h3{
-                font-size: 1.4em;
+                font-size: 1em;
             }
         }
     }
@@ -294,7 +297,7 @@ footer{
     padding: 40px;
 
     span{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     ul{
@@ -305,8 +308,8 @@ footer{
     }
     ul li a{
         color: $font-light;
-        font-size: 1.5em;
-        padding: 20px;
+        font-size: 1em;
+        padding: 10px;
         border: 3px solid white;
         border-radius: 50%;
     }
@@ -327,6 +330,10 @@ footer{
         background-size: cover;
         border-bottom: 5px solid $orange;
         position: static;
+
+        nav ul li a:hover{
+            color: $font-light;
+        }
     }
                             // header end
 
@@ -336,7 +343,7 @@ footer{
         padding: 50px ;
         h1{
             text-align: center;
-            font-size: 3em;
+            font-size: 1.7em;
             font-weight: 100;
 
             &::after{
@@ -352,7 +359,7 @@ footer{
         span{
             display: block;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: $font-mid;
             margin: 30px;
         }
@@ -371,9 +378,10 @@ footer{
 
                 h2{
                     font-weight: 600;
+                    font-size: 1em;
                 }
                 p{
-                    font-size: 1.3em;
+                    font-size: 0.9em;
                     color: $font-mid;
                 }
             }
@@ -382,15 +390,16 @@ footer{
                 text-align: center;
 
                 i{
-                    font-size: 5em;
+                    font-size: 3em;
                     color: $orange;
                 }
                     h3{
-                        font-size: 1.5em;
+                        font-size: 1em;
+                        font-weight: 700;
                         margin: 20px 0 10px 0;
                     }
                     p{
-                        font-size: 1.3em;
+                        font-size: 0.9em;
                     }
             }
         }
@@ -408,7 +417,7 @@ footer{
         text-align: center;
         color: $font-light;
         font-weight: 100;
-        font-size: 3em;
+        font-size: 2em;
 
         &::after{
             content: "";
@@ -422,11 +431,11 @@ footer{
     }
     .prog{
         color: $font-light;
-        font-size: 1.5em;
+        font-size: 1em;
 
         .progress{
             margin: 0 0 25px 0;
-            height: 30px;
+            height: 15px;
 
             .progress-bar{
                 background-color: $orange;
@@ -462,7 +471,7 @@ footer{
     padding: 50px;
 
     h2{
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
 
         &::after{
@@ -477,7 +486,7 @@ footer{
     }
     span{
         display: block;
-        font-size: 1.4em;
+        font-size: 1.3em;
         text-align: center;
         margin: 30px;
     }
@@ -490,7 +499,7 @@ footer{
             width: 25%;
 
             p{
-                font-size: 1.3em;
+                font-size: 0.9em;
                 border: 2px solid #ccc;
                 padding: 10px;
                 border-radius: 10px;
@@ -499,13 +508,14 @@ footer{
 
         img{
             border-radius: 50%;
-            width: 100px;
+            width: 80px;
         }
         ul{
             list-style: none;
             display: flex;
             align-items: center;
-            font-size: 1.3em;
+            font-size: 0.9em;
+            padding: 0;
             gap: .5em;
         }
     }
@@ -520,8 +530,9 @@ footer{
 .work{
     padding: 50px;
     h1{
-        font-size: 3em;
+        font-size: 1.8em;
         text-align: center;
+        font-weight: 100;
 
         &::after{
             content: "";
@@ -536,7 +547,7 @@ footer{
 
     span{
         display: block;
-        font-size: 1.4em;
+        font-size: 1.3em;
         text-align: center;
         margin: 30px;
     }
@@ -547,10 +558,13 @@ footer{
 
         li{
         position: relative;
-        }
+        list-style: none;
 
-        img{
-            width: calc(100% - 10px);
+        &:hover>.magic{
+            height: 100%;
+            width: 100%;
+            opacity: .9;
+        }
         }
 
         .magic{
@@ -560,10 +574,113 @@ footer{
             align-items: center;
             position: absolute;
             top: 0;
-            height: 100%;
-            width: 100%;
+            height: 0%;
+            width: 0%;
+            opacity: 0;
+            background-color: $overlay;
+            color: $font-light;
+            transition: all 1s ease-in-out;
         }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
     }
 }
 
                 // work end
+
+                // contact page
+                // contact
+
+.contact{
+    padding: 50px;
+
+    h1{
+        font-size: 1.8em;
+        text-align: center;
+        font-weight: 100;
+
+        &::after{
+            content: "";
+            display: block;
+            background-color: #ffbc00;
+            width: 1.5em;
+            height: 3px;
+            position: relative;
+            margin: auto;
+        }
+    }
+    span{
+        display: block;
+        font-size: 1.3em;
+        text-align: center;
+        margin: 30px;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2em;
+
+        input{
+            padding: 0.5em 1em;
+    }
+        textarea{
+            grid-column: 1/3;
+        }
+        button{
+            color: $font-light;
+            background-color: #333;
+            text-align: center;
+            text-decoration: none;
+            margin: 50px auto 0;
+            width: 50%;
+            grid-column: 1/3;
+            padding: 10px;
+            transition: background-color 1s;
+            border: none;
+
+            &:hover{
+                background-color: $orange;
+            }
+        }
+    }
+}
+
+                // contact end
+
+                // ways
+
+.ways{
+    padding: 50px;
+    background-color: #333;
+    color: $font-light;
+    display: flex;
+    justify-content: space-around;
+
+    .way{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+                // ways end
+
+                // next project
+
+.next{
+    background-color: $orange;
+    color: $font-light;
+    font-size: 2.5em;
+    padding: 50px;
+    text-align: center;
+}
+
+                // next project end
+
+                // contact page end
