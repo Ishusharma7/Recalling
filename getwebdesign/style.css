@@ -3,6 +3,7 @@ body{
         font-family: "Mulish", sans-serif;
         font-style: normal;
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -25,11 +26,25 @@ nav{
 nav span{
     font-size: 32px;
     font-weight: 700;
+    text-align: center;
 }
 nav div ul{
     display: flex;
     list-style: none;
     gap: 48px;
+    align-items: center;
+}
+nav div ul li:first-child{
+    color: #FAC2B2;
+}
+nav div ul li:last-child{
+    background-color: #F6683F;
+    padding: 52px 22px 17px 20px;
+    border-radius: 0 0 8px 8px;
+    color: white;
+}
+.mnu{
+    display: none;
 }
 
                     /* header end */
@@ -140,6 +155,9 @@ nav div ul{
     ". f";
     grid-row-gap: 80px ;
     grid-column-gap: 30px ;
+}
+.grid img{
+    min-width: 170px;
 }
 .grid .grid-item{
     display: inline-flex;
@@ -375,12 +393,343 @@ border-radius: 8px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 120px 0;
 }
 .faq h2{
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 88px;
+}
+.list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.list ul li{
+    padding: 32px 0;
+    border-bottom: 1px solid #FCC6B7;
+    width: -webkit-fill-available;
+    text-align: start;
+    font-size: 24px;
+    line-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
                         /* faq end */
+
+                        /* quest */
+
+.quest{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0;
+    background-color: #FDF8F8;
+}
+.quest h2{
+    font-size: 48px;
+}
+form{
+    background-color: white;
+    margin-top: 60px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 70px;
+}
+form input[type="text"]{
+    border: none;
+    background-color:#FDF8F8 ;
+    outline: none;
+
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 430px;
+    height: 70px;
+    background-color:#FDF8F8;
+    padding: 24px 23px;
+    cursor: text;
+    border-radius: 8px;
+}
+.fast-mail{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#message{
+    height: 240px;
+}
+.icon img{
+    width: 24px;
+    height: 24px;
+}
+form button{
+    display: flex;
+    width: 430px;
+    padding: 20px 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+                        /* quest end */
+
+
+                        /* footer */
+footer{
+    background-color: black;
+    color: white;
+}
+.foot{
+    margin: 0 auto;
+    background-color: black;
+    max-width: 1340px;
+}
+.logos{
+    display: flex;
+    gap: 143px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 90px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+.logos img{
+    width: 125px;
+    height: 23px;
+}
+.get-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 126px auto;
+}
+.get-started h2{
+    font-size: 64px;
+    text-align: center;
+}
+.get-started span{
+    line-height: 24px;
+    margin: 16px 0 60px 0;
+}
+.get-started button{
+    text-align: center;
+    width: 595px;
+    padding: 20px 56px;
+    border-radius: 8px;
+}
+.contact{
+    display: flex;
+    gap: 94px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact .flex-item:nth-child(2){
+    margin: 0 56px 0 76px;
+}
+.contact .flex-item h3{
+    font-size: 32px;
+}
+.contact .flex-item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact .flex-item ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.brands{
+    display: flex;
+    gap: 32px;
+    margin: 80px 0 0 4.5rem;
+    padding-bottom: 107px;
+}
+.brands img{
+    width: 24px;
+    height: 24px;
+}
+                        /* footer end */
+
+@media screen and (max-width: 1115px){ 
+
+            /* header */
+
+nav{
+    flex-direction: column;
+    gap: 30px;
+}
+
+            /* header end */                            
+                        }
+
+@media screen and (max-width: 860px){ 
+    /* changing prperties of grid in layer design matters and choose */
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "a"
+                            "b"
+                            "c"
+                            "d"
+                            "e"
+                            "f"
+        ;                       
+    }
+}
+
+@media screen and (max-width: 750px){ 
+    /* header */
+
+nav{
+    width: 100vw;
+    align-items: normal;
+    gap: 0;
+}
+nav div ul{
+    flex-direction: column ;
+}
+.mnu{
+    display: block;
+}
+.menu{
+    background-color: black;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fa-bars:before{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.mnu:hover+.menu {
+    cursor: pointer;
+    opacity: 1;
+}
+nav div ul li:last-child{
+    background-color: transparent;
+    padding: 0;
+    color: black;
+}
+
+    /* header end */
+
+    /* illustrate */
+
+.illustrate{
+    flex-direction: column;
+}
+.illustrate-item{
+    flex-direction: row;
+    width: 100%;
+}
+
+    /* illustrate end */
+
+    /* footer */
+
+.get-started h2{
+    font-size: 40px;
+}
+.contact{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contact ,.flex-item{
+    width: 100%;
+    align-items: center;
+}
+.contact .flex-item:nth-child(2){
+    margin: 0;
+}
+.contact .flex-item ul {
+    text-align: center;
+}
+.get-started button{
+    width: max-content;
+}
+
+    /* footer end */
+}
+
+@media screen and (max-width: 600px){ 
+    /* form */
+
+form{
+    padding: 20px;
+}
+
+    /* form end */
+
+    /* illustrate */
+
+    .illustrate-item img{
+        display: none;
+    }
+    
+    /* illustrate end*/
+
+}
+@media screen and (max-width: 500px){ 
+    /* design matter */
+
+.container p{
+    display: none;
+}
+.design h2{
+    font-size: 30px;
+}
+.container h3{
+    font-size: 20px;
+}
+
+    /* design matter end */
+/* illustrate */
+.illustrate-item h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2rem;
+}
+/* illustrate end*/
+
+/* fixing fonts and buttons */
+.list ul li{
+    font-size: 20px;
+}
+.quest h2{
+    font-size: 30px;
+}
+.idea button{
+    margin: 0;
+}
+.get-started h2 {
+    font-size: 30px;
+}
+label{
+    width: 300px;
+}
+form button{
+    width: 300px;
+}
+}
