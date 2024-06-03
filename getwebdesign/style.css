@@ -390,6 +390,7 @@ nav ul li:last-child a{
     font-size: 32px;
     line-height: 36px;
     font-family: walshein;
+    text-align: center;
 }
 .bring span{
     line-height: 170%;
@@ -602,6 +603,13 @@ nav{
 .grid-item .container{
     max-height: 100%;
 } 
+
+.contact .flex-item{
+    width: 30%;
+}
+.contact .flex-item:nth-child(2){
+    margin: 0;
+}
                         }
 
 @media screen and (max-width: 860px){ 
@@ -626,21 +634,26 @@ nav{
     align-items: normal;
     gap: 0;
 }
+nav ul li:last-child a{
+    padding: 0;
+    background-color: transparent;
+}
 nav ul{
     flex-direction: column ;
     align-items: normal;
-    padding: 50px 20px 0 20px;
+    padding: 30px 20px 30px 20px;
 }
 .mobile-menu{
     display: block;
 }
 nav ul{
     background-color: black;
-    color: white;
     width: 0;
     opacity: 0;
     z-index: 10;
-    
+}
+nav ul li a {
+    color: white;
 }
 .mobile-menu{
     display: block;
