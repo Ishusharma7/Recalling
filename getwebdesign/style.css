@@ -1,7 +1,12 @@
+                                        /* global */
+@font-face {
+    font-family: walshein;
+    src: url(./Font/GTWalsheimProBlack.OTF);
+}
 body{
     
-        font-family: "Mulish", sans-serif;
-        font-style: normal;
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
 }
 
 *{
@@ -9,6 +14,17 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+h1{
+   font-size: 80px;
+   font-weight: 700;
+}
+ h2{
+    font-size: 48px;
+    font-family: walshein;
+}
+
+                                        /* global */
+
                     /* header */
 
 header{
@@ -19,32 +35,33 @@ header{
 nav{
     display: flex;
     gap: 179px;
-    align-items: center;
+    align-items: flex-end;
     max-width: 1170px;
     height: 88px;
 }
 nav span{
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
+    padding-bottom: 10px;
 }
-nav div ul{
+nav ul{
     display: flex;
     list-style: none;
     gap: 48px;
-    align-items: center;
+    align-items: flex-end;
+}
+nav ul li{
+    padding-bottom: 17px;
     width: max-content;
 }
-nav div ul li:first-child{
+nav ul li:first-child{
     color: #FAC2B2;
 }
-nav div ul li:last-child{
+nav ul li:last-child{
     background-color: #F6683F;
     padding: 52px 22px 17px 20px;
     border-radius: 0 0 8px 8px;
     color: white;
 }
-.mnu{
+.mobile-menu{
     display: none;
 }
 
@@ -61,10 +78,6 @@ nav div ul li:last-child{
     align-items: center;
     text-align: center;
     margin: 0 auto;
-}
-.hero h1{
-    font-size: 80px;
-    font-weight: 700;
 }
 .hero p{
     font-size: 28px;
@@ -99,6 +112,7 @@ nav div ul li:last-child{
     font-size: 32px;
     font-weight: 700;
     line-height: 3rem;
+    font-family: walshein;
 }
 .illustrate-item p{
     font-weight: 400;
@@ -117,13 +131,11 @@ nav div ul li:last-child{
     align-items: center;
     padding: 80px 0;
 }
-.design h2{
-    font-size: 48px;
-}
 .design span{
     display: block;
     font-size: 24px;
     margin: 36px 0 120px 0;
+    max-width: 605px;
 }
 
 .item-1{
@@ -195,10 +207,13 @@ nav div ul li:last-child{
 }
 .service h2{
     font-size: 38px;
+    font-family: walshein;
 }
 .service span{
     font-size: 24px;
     margin: 36px 0 120px 0;
+    max-width: 605px;
+
 }
 .flex{
     display:flex;
@@ -228,6 +243,8 @@ nav div ul li:last-child{
 .more span{
     margin: 80px 0;
     font-size: 24px;
+    max-width: 605px;
+
 }
 .more button{
     padding: 20px 56px;
@@ -251,12 +268,11 @@ nav div ul li:last-child{
     padding: 80px 0;
 }
 
-.result h2{
-    font-size: 48px;
-}
 .result span{
     font-size: 24px;
     margin: 36px 0 120px 0;
+        max-width: 605px;
+
 }
 .result .flex{
     gap: 170px;
@@ -287,12 +303,11 @@ nav div ul li:last-child{
     max-width: 1191px;
     margin: 0 auto;
 }
-.industry h2{
-    font-size: 48px;
-}
 .industry span{
     font-size: 24px;
     margin: 36px 0 120px 0;
+    max-width: 605px;
+
 }
 .industry .grid-2{
     display: grid;
@@ -333,12 +348,11 @@ nav div ul li:last-child{
     align-items: center;
     padding: 80px 0 160px 0;
 }
-.choose h2{
-    font-size: 48px;
-}
 .choose span{
     font-size: 24px;
     margin: 36px 0 120px 0;
+    max-width: 605px;
+
 }
 .choose .grid .grid-item .container{
     padding: 0;
@@ -369,6 +383,7 @@ nav div ul li:last-child{
 .bring h2{
     font-size: 32px;
     line-height: 36px;
+    font-family: walshein;
 }
 .bring span{
     line-height: 170%;
@@ -397,7 +412,6 @@ border-radius: 8px;
     padding: 120px 0;
 }
 .faq h2{
-    font-size: 48px;
     font-weight: 700;
     margin-bottom: 88px;
 }
@@ -433,9 +447,6 @@ border-radius: 8px;
     align-items: center;
     padding: 120px 0;
     background-color: #FDF8F8;
-}
-.quest h2{
-    font-size: 48px;
 }
 form{
     background-color: white;
@@ -520,6 +531,7 @@ footer{
 .get-started h2{
     font-size: 64px;
     text-align: center;
+    font-family: walshein;
 }
 .get-started span{
     line-height: 24px;
@@ -561,6 +573,7 @@ footer{
     margin: 80px auto;
     padding-bottom: 107px;
     max-width: 1340px;
+    margin-bottom: 0;
 }
 .brands img{
     width: 24px;
@@ -575,9 +588,14 @@ footer{
 nav{
     flex-direction: column;
     gap: 30px;
+    align-items: center;
 }
 
             /* header end */                            
+
+.grid-item .container{
+    max-height: 100%;
+} 
                         }
 
 @media screen and (max-width: 860px){ 
@@ -602,34 +620,35 @@ nav{
     align-items: normal;
     gap: 0;
 }
-nav div ul{
+nav ul{
     flex-direction: column ;
     align-items: normal;
     padding: 50px 20px 0 20px;
 }
-.mnu{
+.mobile-menu{
     display: block;
 }
-.menu{
+nav ul{
     background-color: black;
     color: white;
     width: 0;
     opacity: 0;
     z-index: 10;
-    transition: all 1s ease-in-out;
+    
 }
-.mnu{
+.mobile-menu{
     display: block;
     position: absolute;
     right: 20px;
     top: 20px;
 }
-.mnu:hover+.menu {
+.mobile-menu:hover+ ul {
     cursor: pointer;
     width: 100%;
     opacity: 1;
+    transition: all 1s ease-in-out;
 }
-nav div ul li:last-child{
+nav ul li:last-child{
     background-color: transparent;
     padding: 0;
     color: black;
