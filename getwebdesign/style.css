@@ -4,7 +4,6 @@
     src: url(./Font/GTWalsheimProBlack.OTF);
 }
 body{
-    
     font-family: "Mulish", sans-serif;
     font-style: normal;
 }
@@ -21,6 +20,10 @@ h1{
  h2{
     font-size: 48px;
     font-family: walshein;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
                                         /* global */
@@ -41,6 +44,8 @@ nav{
 }
 nav span{
     padding-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
 }
 nav ul{
     display: flex;
@@ -52,10 +57,11 @@ nav ul li{
     padding-bottom: 17px;
     width: max-content;
 }
-nav ul li:first-child{
+nav ul li:hover a{
     color: #FAC2B2;
+    cursor: pointer;
 }
-nav ul li:last-child{
+nav ul li:last-child a{
     background-color: #F6683F;
     padding: 52px 22px 17px 20px;
     border-radius: 0 0 8px 8px;
